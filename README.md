@@ -1,8 +1,26 @@
-# React + Vite
+# TARKHINEH
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tools
 
-Currently, two official plugins are available:
+- Reactjs:  Base
+- Vite:  for Create React App and tooling.
+- Eslint:  Linting tool to catch errors and enforce coding standards.
+- Prettier:  Linting tool to catch errors and enforce coding standards.
+- Husky: For Git hooks to automate linting/formatting on commit.
+- Lint-staged: Run linters on staged files during commits.
+- Zustand: Lightweight state management alternative.
+- Tailwind CSS: For styling
+- React Router: For client-side routing.
+- React Query (TanStack Query): Data fetching, caching, and synchronization.
+- React Hook Form: Lightweight form handling.
+- Git and Github: For version control
+- Leaflet: For map and location
+- Stripe: For payment
+- WebSockets:  for real-time communication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+OPTIONAL:
+
+- Typescript: For type safety
+- Jest/React Testing Library/Vitest: For testing
+- i18next: For Internationalization
+- Storybook: For Component-driven UI development.
