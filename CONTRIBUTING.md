@@ -38,8 +38,8 @@ We welcome suggestions to improve the project! To propose a new feature:
    ```bash
    npm install
    ```
-4. Check the [task list](https://github.com/orgs/DevExtend/projects/3) for pending tasks.
-5. Select your interested task.
+4. Check the [issues](https://github.com/DevExtend/frontend-tarkhineh/issues).
+5. Select a issue you want to work on.
 6. Create a new branch for your work:
 
    ```bash
@@ -86,9 +86,9 @@ We welcome suggestions to improve the project! To propose a new feature:
 
 In your pull request, include:
 
-- A clear description of the changes.
+- Use prefined template in the body.
 - The issue number your PR fixes (if applicable).
-- Screenshots or demos (if applicable).
+- Write aclear description of the changes.
 
 ### Reviewing Process
 
