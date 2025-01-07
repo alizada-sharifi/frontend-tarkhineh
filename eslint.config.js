@@ -29,7 +29,14 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: {react: {version: '18.3'}},
+    settings: {
+      react: {version: '18.3'},
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+      },
+    },
     plugins: {
       react,
       'react-hooks': reactHooks,
