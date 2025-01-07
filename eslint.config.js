@@ -4,9 +4,20 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import importPlugin from 'eslint-plugin-import';
 
 export default [
-  {ignores: ['dist']},
+  importPlugin.flatConfigs.recommended,
+  {
+    ignores: [
+      'dist',
+      'node_modules',
+      'vite.config.js',
+      'tailwind.config.js',
+      'postcss.config.js',
+      'eslint.config.js',
+    ],
+  },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -35,7 +46,23 @@ export default [
         {allowConstantExport: true},
       ],
       'no-empty-function': 'error',
+      'prefer-arrow-callback': 'off',
+      'func-style': ['error', 'declaration', {allowArrowFunctions: false}], // Enforce function declarations
+      'import/no-anonymous-default-export': [
+        'error',
+        {
+          allowArray: false,
+          allowArrowFunction: false,
+          allowAnonymousClass: false,
+          allowAnonymousFunction: false,
+          allowCallExpression: false, // backward compatibility -> e.g. export default foo(bar)
+          allowNew: false,
+          allowLiteral: false,
+          allowObject: true,
+        },
+      ],
     },
   },
+
   eslintPluginPrettierRecommended,
 ];
