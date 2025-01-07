@@ -2,10 +2,10 @@
 
 ## Tools
 
-- Reactjs:  Base
-- Vite:  for Create React App and tooling.
-- Eslint:  Linting tool to catch errors and enforce coding standards.
-- Prettier:  Linting tool to catch errors and enforce coding standards.
+- Reactjs: Base
+- Vite: for Create React App and tooling.
+- Eslint: Linting tool to catch errors and enforce coding standards.
+- Prettier: Linting tool to catch errors and enforce coding standards.
 - Husky: For Git hooks to automate linting/formatting on commit.
 - Lint-staged: Run linters on staged files during commits.
 - Zustand: Lightweight state management alternative.
@@ -16,7 +16,7 @@
 - Git and Github: For version control
 - Leaflet: For map and location
 - Stripe: For payment
-- WebSockets:  for real-time communication
+- WebSockets: for real-time communication
 
 OPTIONAL:
 
@@ -24,3 +24,15 @@ OPTIONAL:
 - Jest/React Testing Library/Vitest: For testing
 - i18next: For Internationalization
 - Storybook: For Component-driven UI development.
+
+## Contributing
+
+For contributing, please read [Contributing](./CONTRIBUTING.md).
+
+## Folder structure
+
+The folder structure descriped in the [CONTRIBUTING](./GUIDELINE.md)
+
+## License
+
+MIT License
