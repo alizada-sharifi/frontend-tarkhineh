@@ -38,8 +38,8 @@ We welcome suggestions to improve the project! To propose a new feature:
    ```bash
    npm install
    ```
-4. Check the [issues](https://github.com/DevExtend/frontend-tarkhineh/issues).
-5. Select a issue you want to work on.
+4. Check the [issues](https://github.com/DevExtend/frontend-tarkhineh/issues) and corresponding tasks in [Projects](https://github.com/orgs/DevExtend/projects/3/views/1).
+5. Select a task you want to work on and move it to `in progress` section.
 6. Create a new branch for your work:
 
    ```bash
