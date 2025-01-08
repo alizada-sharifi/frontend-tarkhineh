@@ -1,13 +1,12 @@
-import { createBrowserRouter } from "react-router";
-import RootLayout from "../layouts/RootLayout";
-import Home from "../pages/Home";
-import Users from "../pages/Users";
-import NotFound from "../pages/NotFound";
-
+import {createBrowserRouter} from 'react-router';
+import RootLayout from '../layouts/RootLayout';
+import Home from '../pages/Home';
+import Users from '../pages/Users';
+import NotFound from '../pages/NotFound';
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <RootLayout />,
     errorElement: <NotFound />,
     children: [
@@ -16,9 +15,9 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "users",
+        path: 'users',
         element: <Users />,
-      }
-    ]
+      },
+    ],
   },
 ]);
