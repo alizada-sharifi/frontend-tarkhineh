@@ -1,10 +1,5 @@
-# Title & Related Issue
+**Title and related issues number**:
 
-**Title**:  
-**Issue**: Closes #<ISSUE_NUMBER> (if applicable)
-
-# Description
+# Short description of the changes
 
 Provide a clear description of the changes made in this pull request.
-
-## Additional information
