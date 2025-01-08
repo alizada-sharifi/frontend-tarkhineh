@@ -1,9 +1,9 @@
-/* eslint-disable func-style */
-/* eslint-disable prettier/prettier */
+
+
 import { NavLink } from "react-router"
 
 
-const Navbar = () => {
+function Navbar  () {
     return (
         <nav
             className='border-b pb-2 space-x-2'
