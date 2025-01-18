@@ -1,5 +1,8 @@
 # TARKHINEH
 
+# Enviroment
+- Nodejs > 22.11.*
+
 ## Tools
 
 - Reactjs: Base
@@ -27,11 +30,11 @@ OPTIONAL:
 
 ## Contributing
 
-For contributing, please read [Contributing](./CONTRIBUTING.md).
+To contribute, please read [Contributing](./CONTRIBUTING.md).
 
 ## Folder structure
 
-The folder structure descriped in the [CONTRIBUTING](./GUIDELINE.md)
+The folder structure described in the [structure file](./FOLDER_STRUCTURE.md)
 
 ## License
 
