@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <h1 className="text-2xl font-bold">Home</h1>
+      <h1 className="text-2xl font-bold">متن آزمایشی</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facere
         aliquid perferendis facilis veniam iste, pariatur aut, saepe autem fuga
