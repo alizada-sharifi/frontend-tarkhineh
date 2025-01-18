@@ -4,11 +4,18 @@ import Home from './pages/Home';
 import Users from './pages/Users';
 import NotFound from './pages/NotFound';
 import RootLayout from './layouts/RootLayout';
+import {cn} from './helpers/common';
 
 function App() {
   return (
     <>
-      <h1 className="text-2xl font-bold">React Router</h1>
+      <h1
+        className={cn('text-2xl font-bold', 'text-blue-400', {
+          'text-red-400': true,
+        })}
+      >
+        React Router
+      </h1>
       <Navbar />
 
       <Routes>
