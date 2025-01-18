@@ -130,7 +130,27 @@ This document provides an overview of the `src` folder structure and guidelines 
 
 ---
 
-### 10. `styles`
+### 10. `store`
+- **Purpose**: Manages application state using the Zustand state management library.
+- **Best Practices**:
+  - Create separate files for different slices of the state (e.g., `authStore.js`, `cartStore.js`).
+  - Keep the state logic modular and scoped to specific features or domains.
+  - Example:
+    ```javascript
+    import create from "zustand";
+
+    const useAuthStore = create((set) => ({
+      user: null,
+      setUser: (user) => set({ user }),
+      clearUser: () => set({ user: null }),
+    }));
+
+    export default useAuthStore;
+    ```
+
+---
+
+### 11. `styles`
 
 - **Purpose**: Contains global styles, themes, or variables.
 - **Best Practices**:
@@ -147,6 +167,7 @@ This document provides an overview of the `src` folder structure and guidelines 
 
 ---
 
+
 ## Other
 
 - **Code Consistency**: Follow coding standards enforced by ESLint and Prettier.
@@ -154,4 +175,4 @@ This document provides an overview of the `src` folder structure and guidelines 
 
 ## Issue
 
-If some folder for best practices is missing please let us know with [open a issue](https://github.com/DevExtend/frontend-tarkhineh/issues).
+If some folder for best practices is missing please let us know with [open an issue](https://github.com/DevExtend/frontend-tarkhineh/issues).
