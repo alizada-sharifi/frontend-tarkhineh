@@ -36,6 +36,11 @@ To contribute, please read [Contributing](./CONTRIBUTING.md).
 
 The folder structure described in the [structure file](./FOLDER_STRUCTURE.md)
 
+## Figma file
+
+For check the design, you can visit the [Figma]([./FOLDER_STRUCTURE.md](https://www.figma.com/design/XHpW3Jk7bQyEbtVnNiIaba/%F0%9F%8D%94Tarkhineh-(Community)?node-id=5-57&p=f&t=8QB4xnYYOKesyafr-0))
+
+
 ## License
 
 MIT License
