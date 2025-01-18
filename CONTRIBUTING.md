@@ -32,7 +32,7 @@ We welcome suggestions to improve the project! To propose a new feature:
 1. **Fork the repository** to your GitHub account.
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/DevExtend/frontend-tarkhineh.git
+   git clone https://github.com/example.git
    ```
 3. Install dependencies:
    ```bash
@@ -56,15 +56,15 @@ We welcome suggestions to improve the project! To propose a new feature:
 
 #### Coding Guidelines
 
-- Follow the **[Guidlines](https://github.com/DevExtend/frontend-tarkhineh/GUIDELINE.md)**.
-- Use **Prettier** and **Eslint** extentions:
+- Follow the **[folder struture](https://github.com/DevExtend/frontend-tarkhineh/FOLDER_STRUCTURE.md)**.
+- Use **Prettier** and **Eslint** extensions:
 - Write clear, concise, and meaningful commit messages following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification, [Commitizen](https://commitizen.dev/) and this [Article](https://dev.to/basementdevs/be-a-better-developer-with-these-git-good-practices-2dim).
 
 #### Submitting Pull Requests
 
-1. Ensure your branch is up-to-date with the `stage` branch:
+1. Ensure your branch is up-to-date with the `main` branch:
    ```bash
-   git pull origin stage
+   git pull origin main
    ```
 2. Commit your changes with descriptive messages:
    ```bash
@@ -82,13 +82,13 @@ We welcome suggestions to improve the project! To propose a new feature:
    git checkout -b feature/your-task-name
    ```
 
-4. Create a pull request (PR) from your branch to the `stage` branch of the original repository.
+4. Create a pull request (PR) from your branch to the `main` branch of the original repository.
 
 In your pull request, include:
 
-- Use prefined template in the body.
+- Use a preferred template in the body.
 - The issue number your PR fixes (if applicable).
-- Write aclear description of the changes.
+- Write a clear description of the changes.
 
 ### Reviewing Process
 
@@ -102,7 +102,7 @@ Once your pull request is submitted:
 
 We follow a [Code of Conduct](https://github.com/DevExtend/DevExtend/blob/main/CODE_OF_CONDUCT.md) to ensure a welcoming and inclusive community. Please review it before contributing.
 
-## Need Help?
+## Do you need any help?
 
 If you have questions, feel free to [open an issue](https://github.com/DevExtend/frontend-tarkhineh/issues) or reach out via [Email](mailto:devextend.af@gmail.com).
 
