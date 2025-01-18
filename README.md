@@ -1,7 +1,8 @@
 # TARKHINEH
 
 # Enviroment
-- Nodejs > 22.11.*
+
+- Nodejs > 22.11.\*
 
 ## Tools
 
@@ -16,6 +17,7 @@
 - React Router: For client-side routing.
 - React Query (TanStack Query): Data fetching, caching, and synchronization.
 - React Hook Form: Lightweight form handling.
+- Zod: Form validation schema,
 - Git and Github: For version control
 - Leaflet: For map and location
 - Stripe: For payment
@@ -38,8 +40,7 @@ The folder structure described in the [structure file](./FOLDER_STRUCTURE.md)
 
 ## Figma file
 
-For check the design, you can visit the [Figma]([./FOLDER_STRUCTURE.md](https://www.figma.com/design/XHpW3Jk7bQyEbtVnNiIaba/%F0%9F%8D%94Tarkhineh-(Community)?node-id=5-57&p=f&t=8QB4xnYYOKesyafr-0))
-
+For check the design, you can visit the [Figma](<https://www.figma.com/design/XHpW3Jk7bQyEbtVnNiIaba/%F0%9F%8D%94Tarkhineh-(Community)?node-id=5-57&p=f&t=8QB4xnYYOKesyafr-0%3E>)
 
 ## License
 

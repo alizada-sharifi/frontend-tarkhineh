@@ -113,7 +113,54 @@ This document provides an overview of the `src` folder structure and guidelines 
 
 ---
 
-### 9. `services`
+### 9. `router`
+
+- **Purpose**: Contains React Router configuration.
+- **Best Practices**:
+  - Name folders/files based on the route (e.g., `HomePage`, `LoginPage`, `DashboardPage`).
+  - Keep route-specific logic here and use reusable components from `components`.
+  - Example:
+    ```javascript
+    import {createBrowserRouter} from 'react-router-dom';
+    export const router = createBrowserRouter([
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+      {
+        path: '/login',
+        element: <LoginPage />,
+      },
+      {
+        path: '/dashboard',
+        element: <DashboardPage />,
+      },
+    ]);
+    ```
+
+---
+
+### 10. `schemas`
+
+- **Purpose**: Contains Zod schemas for form validation.
+- **Best Practices**:
+
+  - Use Zod for form validation.
+  - Store schemas in files like `loginSchema.js`.
+  - Example:
+
+```javascript
+import {z} from 'zod';
+
+export const loginSchema = z.object({
+  email: z.string().email('Invalid email format'),
+  password: z.string().min(6, 'Password must be at least 6 characters'),
+});
+```
+
+---
+
+### 11. `services`
 
 - **Purpose**: Handles API calls and external data-fetching logic.
 - **Best Practices**:
@@ -130,19 +177,22 @@ This document provides an overview of the `src` folder structure and guidelines 
 
 ---
 
-### 10. `store`
+### 12. `stores`
+
 - **Purpose**: Manages application state using the Zustand state management library.
 - **Best Practices**:
+
   - Create separate files for different slices of the state (e.g., `authStore.js`, `cartStore.js`).
   - Keep the state logic modular and scoped to specific features or domains.
   - Example:
+
     ```javascript
-    import create from "zustand";
+    import create from 'zustand';
 
     const useAuthStore = create((set) => ({
       user: null,
-      setUser: (user) => set({ user }),
-      clearUser: () => set({ user: null }),
+      setUser: (user) => set({user}),
+      clearUser: () => set({user: null}),
     }));
 
     export default useAuthStore;
@@ -150,7 +200,7 @@ This document provides an overview of the `src` folder structure and guidelines 
 
 ---
 
-### 11. `styles`
+### 13. `styles`
 
 - **Purpose**: Contains global styles, themes, or variables.
 - **Best Practices**:
@@ -166,7 +216,6 @@ This document provides an overview of the `src` folder structure and guidelines 
     ```
 
 ---
-
 
 ## Other
 
