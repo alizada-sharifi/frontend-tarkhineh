@@ -110,4 +110,5 @@ function Logo() {
     </svg>
   );
 }
+
 export default Logo;
