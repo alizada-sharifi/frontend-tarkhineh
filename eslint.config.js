@@ -25,12 +25,12 @@ export default [
       globals: globals.browser,
       parserOptions: {
         ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
+        ecmaFeatures: {jsx: true},
         sourceType: 'module',
       },
     },
     settings: {
-      react: { version: '18.3' },
+      react: {version: '18.3'},
       'import/resolver': {
         node: {
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -50,11 +50,11 @@ export default [
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
-        { allowConstantExport: true },
+        {allowConstantExport: true},
       ],
       'no-empty-function': 'error',
       'prefer-arrow-callback': 'off',
-      'func-style': ['error', 'declaration', { allowArrowFunctions: false }], // Enforce function declarations
+      'func-style': ['error', 'declaration', {allowArrowFunctions: false}], // Enforce function declarations
       'import/no-anonymous-default-export': [
         'error',
         {
@@ -68,6 +68,7 @@ export default [
           allowObject: true,
         },
       ],
+      'react/prop-types': 'off',
     },
   },
 
