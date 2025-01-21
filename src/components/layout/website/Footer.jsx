@@ -12,7 +12,7 @@ function Footer() {
           <div className="py-10">
             <div className="grid grid-cols-12 gap-8">
               {/* LINKS */}
-              <div className="col-span-6 space-y-5 md:col-span-4 lg:col-span-2">
+              <div className="col-span-6 space-y-5 md:col-span-4 lg:col-span-3">
                 <p className="text-xl font-bold">{'دسترسی آسان'}</p>
                 <div className="flex flex-col gap-4 text-sm">
                   <Link to={ROUTES.FAQ}>{'پرسش‌ های متداول'}</Link>
@@ -33,7 +33,7 @@ function Footer() {
               </div>
 
               {/* BRANCH */}
-              <div className="col-span-6 space-y-5 md:col-span-4 lg:col-span-2">
+              <div className="col-span-6 space-y-5 md:col-span-4 lg:col-span-3">
                 <p className="text-xl font-bold">{'شعبه‌های ترخینه'}</p>
                 <div className="flex flex-col gap-4 text-sm">
                   <Link to={ROUTES.HOME}>{'شعبه کابل'}</Link>
@@ -44,7 +44,7 @@ function Footer() {
               </div>
 
               {/* FORM */}
-              <div className="col-span-12 space-y-5 lg:col-span-8">
+              <div className="col-span-12 space-y-5 lg:col-span-6">
                 <p className="text-xl font-bold">{'پیام به ترخینه '}</p>
                 <MessageForm />
               </div>

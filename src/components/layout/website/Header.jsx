@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router';
+import {Link, NavLink} from 'react-router';
 import {Logo, Search, ShoppingCart, User} from '../../icons';
 import {cn} from '../../../helpers/common';
 import MobileNavbar from './MobileNavbar';
@@ -10,7 +10,9 @@ function Header() {
       <div className="container">
         <div className="flex items-center justify-between gap-4 text-neutral-700">
           <MobileNavbar />
-          <Logo />
+          <Link>
+            <Logo />
+          </Link>
           <nav className="items-center hidden gap-4 md:flex">
             <NavLink
               to={ROUTES.HOME}

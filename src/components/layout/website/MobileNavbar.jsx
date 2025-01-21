@@ -7,6 +7,11 @@ import ROUTES from '../../../router/routePaths';
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  function handleClick() {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <button className="block md:hidden" onClick={() => setIsOpen(true)}>
@@ -50,6 +55,7 @@ function MobileNavbar() {
                   'text-primary': isActive,
                 })
               }
+              onClick={handleClick}
             >
               {'صفحه اصلی'}
             </NavLink>
@@ -60,6 +66,7 @@ function MobileNavbar() {
                   'text-primary': isActive,
                 })
               }
+              onClick={handleClick}
             >
               {'شعبات'}
             </NavLink>
@@ -70,6 +77,7 @@ function MobileNavbar() {
                   'text-primary': isActive,
                 })
               }
+              onClick={handleClick}
             >
               {'منو'}
             </NavLink>
@@ -80,6 +88,7 @@ function MobileNavbar() {
                   'text-primary': isActive,
                 })
               }
+              onClick={handleClick}
             >
               {'درباره ما'}
             </NavLink>
@@ -90,6 +99,7 @@ function MobileNavbar() {
                   'text-primary': isActive,
                 })
               }
+              onClick={handleClick}
             >
               {' تماس با ما'}
             </NavLink>
