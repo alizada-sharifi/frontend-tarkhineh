@@ -14,7 +14,7 @@ function Textarea({
   } = useFormContext();
 
   return (
-    <div className={cn('space-y-1', wrapperClassName)}>
+    <div className={cn('space-y-1 h-full', wrapperClassName)}>
       <textarea
         {...register(name)}
         type={type}

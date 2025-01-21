@@ -7,6 +7,7 @@ function MessageForm() {
   function onSubmit(data) {
     console.log('data', data);
   }
+
   return (
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -18,22 +19,23 @@ function MessageForm() {
               className="text-white bg-transparent placeholder:text-white/80 focus:border-white"
             />
             <Input
-              name="email"
+              name="phone"
               placeholder="شماره تماس"
               className="text-white bg-transparent placeholder:text-white/80 focus:border-white "
             />
             <Input
-              name="phone"
+              name="email"
               placeholder="آدرس ایمیل (اختیاری)"
               className="text-white bg-transparent placeholder:text-white/80 focus:border-white "
             />
           </div>
-          <Textarea
-            name="message"
-            placeholder="پیام شما"
-            wrapperClassName="col-span-6"
-            className="h-full text-white bg-transparent placeholder:text-white/80 focus:border-white "
-          />
+          <div className="col-span-6">
+            <Textarea
+              name="message"
+              placeholder="پیام شما"
+              className="h-full text-white bg-transparent placeholder:text-white/80 focus:border-white "
+            />
+          </div>
         </div>
         <div className="flex items-end ">
           <button className="px-4 py-2 mr-auto text-sm text-white bg-transparent border rounded-md hover:bg-white hover:text-black disabled:bg-neutral-300 disabled:text-neutral-400 disabled:cursor-not-allowed">
