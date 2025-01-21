@@ -1,12 +1,13 @@
 import {Login, Register} from '../pages';
+import ROUTES from './routePaths';
 
 const AuthRouter = [
   {
-    path: '/login',
+    path: ROUTES.LOGIN,
     element: <Login />,
   },
   {
-    path: '/signup',
+    path: ROUTES.REGISTER,
     element: <Register />,
   },
 ];

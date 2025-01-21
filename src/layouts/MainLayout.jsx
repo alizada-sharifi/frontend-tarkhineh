@@ -1,11 +1,16 @@
 import {Outlet} from 'react-router';
+import {Footer, Header} from '../components/layout/website';
 
-function RootLayout() {
+function MainLayout() {
   return (
-    <main className="space-y-2">
-      <Outlet />
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col grow ">
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
 }
 
-export default RootLayout;
+export default MainLayout;
