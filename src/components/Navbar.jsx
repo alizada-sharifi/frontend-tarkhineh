@@ -20,6 +20,14 @@ function Navbar() {
       >
         Users
       </NavLink>
+      <NavLink
+        to="/sign-up"
+        className={({isActive}) =>
+          isActive ? 'text-blue-400 font-bold' : 'text-black font-normal'
+        }
+      >
+        SignUP
+      </NavLink>
     </nav>
   );
 }

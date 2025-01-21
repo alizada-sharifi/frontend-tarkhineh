@@ -5,6 +5,8 @@ import Users from './pages/Users';
 import NotFound from './pages/NotFound';
 import RootLayout from './layouts/RootLayout';
 import {cn} from './helpers/common';
+import SignUp from './pages/SignUP';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="users" element={<Users />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
