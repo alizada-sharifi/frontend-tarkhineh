@@ -5,9 +5,17 @@ const ROUTES = {
   ABOUT: '/about',
   CONTACT: '/contact',
   BRANCH: '/branches',
-  PRIVACY: '/privacy',
   MENU: '/menu',
   PROFILE: (username = ':username') => `/profile/${username}`,
+
+  FAQ: '/faq',
+  TERMS: '/terms',
+  PRIVACY: '/privacy',
+
+  // Social address
+  TELEGRAM: '/',
+  X: '/',
+  INSTAGRAM: '/',
 };
 
 export default ROUTES;
