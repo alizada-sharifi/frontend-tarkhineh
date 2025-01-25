@@ -1,4 +1,5 @@
 import {Link} from 'react-router';
+import {cn} from '../helpers/common';
 
 function Button(props) {
   if (props.href) {
@@ -7,7 +8,10 @@ function Button(props) {
       <Link
         to={href}
         {...rest}
-        className="inline-block w-full px-4 py-2 text-base font-medium text-white rounded-md bg-primary hover:bg-primary-700 disabled:bg-neutral-300 disabled:text-neutral-400 disabled:cursor-not-allowed"
+        className={cn(
+          'inline-block w-full px-4 py-2 text-base font-medium text-white rounded-md bg-primary hover:bg-primary-700 disabled:bg-neutral-300 disabled:text-neutral-400 disabled:cursor-not-allowed',
+          props.className
+        )}
       >
         {props.children}
       </Link>
@@ -18,7 +22,10 @@ function Button(props) {
     <button
       type="submit"
       {...props}
-      className="inline-block w-full px-4 py-2 text-base font-medium text-white rounded-md bg-primary hover:bg-primary-700 disabled:bg-neutral-300 disabled:text-neutral-400 disabled:cursor-not-allowed"
+      className={cn(
+        'inline-block w-full px-4 py-2 text-base font-medium text-white rounded-md bg-primary hover:bg-primary-700 disabled:bg-neutral-300 disabled:text-neutral-400 disabled:cursor-not-allowed',
+        props.className
+      )}
     >
       {props.children}
     </button>
